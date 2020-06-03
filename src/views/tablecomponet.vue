@@ -69,7 +69,7 @@ export default {
         this.grade.push(`${row.num}${row.teacher}${row.term}`)
         console.log(`${selectd}`)
       } else {
-        // this.grade.pop()
+        // this.grade1.pop()
         this.grade.splice(this.grade.indexOf(`${row.num}${row.teacher}${row.term}`), 1)
         console.log(`${row.num}${row.teacher}${row.term}+${selectd}`)
       }
