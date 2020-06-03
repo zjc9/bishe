@@ -1,1 +1,1 @@
-# 基于vue+element-ui的前端教务系统
+# 基于vue+element-ui的前端教务系统ABCD
