@@ -236,7 +236,7 @@ export default {
       this.readExcel()
     },
     testtwo({ row, rowIndex }) {
-      if (row.totalgrade < 90) {
+      if (row.totalgrade < 60) {
         console.log('当前不及格' + row.totalgrade)
         return 'bujige'
       } else {

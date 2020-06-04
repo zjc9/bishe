@@ -15,7 +15,8 @@ export default {
   data() {
     return {
       chengji: [],
-      loading: true
+      loading: true,
+      user: ''
     }
   },
   computed: {
@@ -23,13 +24,14 @@ export default {
       'username',
       'name'
     ])
-  }, beforeCreate() {
+  }, created() {
     var _this = this
+    this.user = sessionStorage.getItem('username')
     getAllGrade().then((res) => {
       var da = JSON.parse(res.data)
       for (let i = 0; i < da.length; i++) {
         var d = da[i].Record
-        if (d.teacher === this.username) {
+        if (d.teacher === this.user) {
           _this.chengji.push(d)
         }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="wscn-http404-container">
     <div class="iframe" style="width: 900px;heigth:900px">
-      <iframe src="http://192.168.253.142:3001/images/404.html" frameborder="0" scrolling="no" style="background-color:transparent; position: absolute; z-index: -1; width: 1600px; height: 800px; top: 0;left:0;" />
+      <iframe src="http://192.168.253.142:3001/images/404.html" style="background-color:transparent; position: absolute; z-index: -1; width: 1600px; height: 800px; top: 0;left:0;" />
     </div>
     <div class="wscn-http404">
       <div class="pic-404">
